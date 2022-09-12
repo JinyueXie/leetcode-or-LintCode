@@ -34,7 +34,50 @@ We discard any intervals that contain inf as they aren't finite.
  ### Solution
 
 ```Python
+from typing import (
+    List,
+)
+from lintcode import (
+    Interval,
+)
 
+"""
+Definition of Interval:
+class Interval(object):
+    def __init__(self, start, end):
+        self.start = start
+        self.end = end
+"""
+
+class Solution:
+    """
+    @param schedule: a list schedule of employees
+    @return: Return a list of finite intervals 
+    """
+    def employee_free_time(self, schedule: List[List[int]]) -> List[Interval]:
+        if not schedule:
+            return []
+        
+        intervals = []
+        for i in range(len(schedule)):
+            for j in range(len(schedule[i])):
+                if j % 2 == 0:
+                    intervals.append((schedule[i][j], schedule[i][j + 1]))
+        
+        intervals.sort(key = lambda x: x[0])
+        
+        results = []
+        last = intervals[0][1]
+
+        for i in range(1, len(intervals)):
+            start = intervals[i][0]
+            end = intervals[i][1]
+            if last < start:
+                results.append(Interval(last, start))
+            
+            last = max(last, end)
+        
+        return results
 ```
 
 Time complexity: O(N）， Space complexity: O(N)
