@@ -79,5 +79,3 @@ class Solution:
         
         return results
 ```
-
-Time complexity: O(N）， Space complexity: O(N)
