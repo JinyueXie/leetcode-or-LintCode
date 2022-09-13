@@ -1,4 +1,4 @@
-We can practice this problem by clicking on this link.
+We can practice this problem by clicking on below links.
 >（https://www.lintcode.com/problem/423/ or https://leetcode.com/problems/valid-parentheses/ ）
 # Description:
  <p> Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
