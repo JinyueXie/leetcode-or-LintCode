@@ -52,5 +52,5 @@ class Solution:
         
 Time complexity: O(N) Space complexity: O(logN)
 
-O(n) time because we visit each element of the array only once, O(n) space because we use stack for recursion which can go as deep as the height of the finished tree which is O(lg2(n))
+O(n) time because we visit each element of the array only once, O(logn) space because we use stack for recursion which can go as deep as the height of the finished tree which is O(lg2(n))
 ```
