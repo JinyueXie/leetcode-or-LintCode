@@ -15,7 +15,7 @@ Input: root = [2,1,3]
 Output: [2,3,1]
 ```
 
-**example 2:**
+**example 3:**
 ```
 Input: root = []
 Output: []
