@@ -2,6 +2,7 @@ We can practice this problem by clicking on this link.
 >（ https://www.lintcode.com/problem/223/solution or https://leetcode.com/problems/palindrome-linked-list/  ）
 # Description:
  <p> Given the head of a singly linked list, return true if it is a palindrome or false otherwise. </p> 
+
 **example 1:**
 ```
 Input: head = [1,2,2,1]
