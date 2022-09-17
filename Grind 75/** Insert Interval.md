@@ -30,7 +30,7 @@ newInterval.length == 2
 0 <= start <= end <= 105
 ```
 
- ### Solution 1
+ ### Solution 1 leetcode
 
 ```Python
 class Solution:
@@ -48,6 +48,28 @@ class Solution:
         res.append(newInterval)
         
         return res
+        
+Time complexity: O(N) Space complexity: O(N)
+```
+ ### Solution 1 lintcode
+
+```Python
+    def insert(self, intervals: List[Interval], newInterval: Interval) -> List[Interval]:
+        results = []
+        insertpos = 0
+        for interval in intervals:
+            if interval.end < newInterval.start:
+                results.append(interval)
+                insertpos += 1
+            elif interval.start > newInterval.end:
+                results.append(interval)
+            else:
+                newInterval.start = min(newInterval.start, interval.start)
+                newInterval.end = max(newInterval.end, interval.end)
+        
+        results.insert(insertpos, newInterval)
+
+        return results
         
 Time complexity: O(N) Space complexity: O(N)
 ```
@@ -69,4 +91,12 @@ class Solution:
         return stack
     
 Time complexity: O(NlogN) Space complexity  O(N)
+```
+
+```
+Syntax of List insert()
+The syntax of the insert() method is
+
+list.insert(i, elem)
+Here, elem is inserted to the list at the ith index. All the elements after elem are shifted to the right.
 ```
