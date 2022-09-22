@@ -56,5 +56,21 @@ Output:
 
 #leetcode submit region begin(Prohibit modification and deletion)
 # Write your MySQL query statement below
-SELECT name FROM Customer WHERE referee_id != 2 || referee_id is NULL
+/* Method-1 using(!=)*/
+select name
+from Customer
+where
+referee_id!=2 or referee_id is NULL;
+
+/* Method-2 (using <>)*/
+select name
+from Customer
+where
+referee_id <> 2 or referee_id is NULL;
+
+/* Method-3 (using not in)*/
+select name
+from Customer
+where
+referee_id not in 2 or referee_id is NULL;
 #leetcode submit region end(Prohibit modification and deletion)
