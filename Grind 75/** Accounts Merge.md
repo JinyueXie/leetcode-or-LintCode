@@ -71,3 +71,50 @@ graph = defaultdict(set)
         return results
 Time complexity: O(NlogN) Space complexity:O(N)
 ```
+### Solution 2
+
+```Python
+class Solution:
+    def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
+        def find(x):
+            if parents[x] != x:
+                parents[x] = find(parents[x])
+
+            return parents[x]
+
+        def union(x, y):
+            r_x = find(x)
+            r_y = find(y)
+            if r_x != r_y:
+                parents[r_x] = r_y
+
+        parents = {}
+        email_to_name = {}
+
+        for account in accounts:
+            name = account[0]
+            for email in account[1:]:
+                parents[email] = email
+                email_to_name[email] = name
+
+        for account in accounts:
+            email_one = account[1]
+            for email in account[2:]:
+                union(email, email_one)
+
+        group = defaultdict(list)
+
+        for email in parents:
+            root = find(email)
+            group[root].append(email)
+
+        results = []
+
+        for key in group:
+            results.append([email_to_name[key]] + sorted(group[key]))
+        return results
+
+
+
+Time complexity: O(NlogN) Space complexity:O(N)
+```
