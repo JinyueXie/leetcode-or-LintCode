@@ -67,6 +67,7 @@ Time complexity: O(N) Space complexity:O(1)
 ```
 
 ### Solution 2
+```
 def myAtoi(self, s: str) -> int:
     # ^ matches beginging of string 
     # \s* any nunber of whitspaces (zero or more)
