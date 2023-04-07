@@ -1,10 +1,22 @@
 # Jinyue Xie Assignment 4 individual document
 
-# 1, Tasks
+# 1, Introduction and Tasks
 
-- Task 1: Implement a teacher registration page (Assignment 2 sprint)
-- Task 2: Implement a student registration page (Assignment 3 sprint)
-- Task 3: Implement dynamic error page (Assignment 4 sprint)
+Introduction: This document serves to outline my tasks and contributions during Assignment 2, 3, and 4 sprints for the project I am working on. As a member of the development team, I have been responsible for implementing key components of our web application, focusing primarily on the creation of registration pages for both teachers and students, as well as a dynamic error page.
+
+## Task Descriptions:
+
+* Task 1: Implement a teacher registration page (Assignment 2 sprint)
+
+The purpose of this task was to create a registration page specifically for teachers, allowing them to sign up and gain access to the web application. The page required inputs for first and last name, email, password, phone number, and gender. The main challenge I faced during this task was ensuring proper validation for the password and confirm password fields, where they needed to match before submission. I resolved this by implementing a custom function to check for the password match and display an error message if they did not match.
+
+* Task 2: Implement a student registration page (Assignment 3 sprint)
+
+Similar to the teacher registration page, the student registration page aimed to provide a sign-up form for students to join the web application. The form included fields for first and last name, email, password, and subjects. The main challenge for this task was similar to Task 1, where I had to ensure the password and confirm password fields matched. I used the same custom function from Task 1 to overcome this challenge.
+
+* Task 3: Implement dynamic error page (Assignment 4 sprint)
+
+The goal of this task was to develop a dynamic error page that would display a relevant error message and code based on the specific error encountered by the user. The main challenge of this task was ensuring that the error message and code were dynamically displayed based on the specific error that occurred. I achieved this by using template literals to display the error message and code as variables, making the error page adaptable to various situations.
 
 # 2, Installation and Running Instructions
 
@@ -321,21 +333,24 @@ Appropriate efforts were made to complete the task, which was indicated in the b
 
 # 11, Learning Achievements
 
-The project presented learning opportunities, which have honed my skills as a developer.
-I learned the importance of writing modular and easy-to-maintain code by using the DRY principle and de-coupling.
-I also learned how to use Github effectively to collaborate with my teammates.
-Using EJS (Embedded JavaScript), I created dynamic web pages that are easy to maintain and update.
-I learned about Scrum meetings and the different roles involved, including Quality Assurance, Scrum Master, Technical Leader, Performance Reviewer, and Note Taker.
-By taking on these roles in different meetings, I was able to contribute to our project and ensure that our team is working effectively.
-Finally, I learned about the importance of understanding the user's perspective when designing and developing a web application.
-Using user stories, I ensured that our project meets the needs and expectations of our users.
+Throughout the project, I gained valuable experience and enhanced my skills as a developer. The project allowed me to understand the significance of writing modular and maintainable code by adhering to the DRY principle and implementing de-coupling techniques. I effectively collaborated with my teammates using Github, ensuring a smooth development process.
 
-# 12, Implementation
+By employing Tailwind CSS, I was able to create dynamic and responsive web pages that are simple to maintain and update. This approach led to an efficient and visually appealing user interface, demonstrating the substantial coding effort I have contributed to the project.
 
-The implementation is complete and correct. The functionality is well-documented and integrated into the team project and repository.
-The code is integrated into the project or some testing mechanism so it can be evaluated as a run-time component.
-The coding principles de-coupling and DRY are applied as appropriate. The code's design is clear and comprehensible from JSdoc comments.
+I also gained insights into Scrum meetings and the various roles involved, such as Quality Assurance, Scrum Master, Technical Leader, Performance Reviewer, and Note Taker. By assuming these roles during different meetings, I actively participated in the project, ensuring our team's optimal performance.
 
-# 13 Conclusion
+Most importantly, I learned the value of empathizing with the user's perspective when designing and developing a web application. By utilizing user stories, I made certain that our project met the needs and exceeded the expectations of our users. The combination of these learning achievements and the substantial coding effort I have invested in the project highlights my dedication and commitment to delivering a high-quality web application.
 
-In conclusion, working on this project has been a valuable learning experience for me. I have gained a deeper understanding of software development and collaboration, and I have honed my skills as a developer. I am proud of the effort I have put into this project, and I am confident that our team will continue to produce high-quality work in the future.
+# 12, Challenges and Solutions
+
+Throughout the project, we encountered various challenges that required innovative solutions. We effectively addressed these challenges by utilizing problem-solving skills, seeking guidance, and adapting to new tools and techniques. This allowed us to overcome obstacles and continue working towards our project goals.
+  
+# 13, Implementation
+
+The implementation is comprehensive, accurate, and well-integrated into the team project and repository. The functionality is extensively documented, ensuring seamless integration with other components. To evaluate the code as a run-time component, it has been incorporated into the project or an appropriate testing mechanism.
+
+By applying coding principles such as de-coupling and DRY, we have achieved a clear and comprehensible design. The code's structure and purpose are easily understandable, thanks to the extensive use of JSdoc comments.
+
+# 14 Conclusion
+
+In conclusion, participating in this project has been a highly rewarding experience. It has allowed me to deepen my understanding of software development, improve my collaboration skills, and refine my abilities as a developer. I take pride in the effort and dedication I have invested in this project, which has led to the successful implementation of our objectives. I am confident that our team will maintain a high standard of work in future endeavors, consistently delivering exceptional results that meet the requirements and exceed expectations.
